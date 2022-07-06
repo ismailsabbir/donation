@@ -2,17 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 .home-page {
   height: 100vh;
   width: 100%;
-  background-image: url(./images/donation.jpg);
+  background-image: url(images/donation.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.logo img {
+  color: brown;
+  font-size: 3rem;
 }
 .home-item {
   text-align: center;
@@ -29,10 +40,11 @@
 }
 .home-item button {
   margin-top: 20px;
-  border: 1px solid orange;
-  background-color: orange;
+  border: 1px solid brown;
+  background-color: brown;
   padding: 10px 40px;
   border-radius: 10px;
+  font-size: 1.3rem;
 }
 .part-2 {
   display: flex;
@@ -46,13 +58,16 @@
   text-align: center;
 }
 .hea h1 {
-  font-weight: 900;
-  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: brown;
+  font-weight: 800;
+  font-size: 2.5rem;
   margin-bottom: 30px;
+  font-family: "Acme";
 }
 .hea p {
   color: gray;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .card {
   display: flex;
@@ -70,14 +85,19 @@
   font-size: 1.5rem;
   font-weight: 800;
   border-radius: 10px;
+  background-color: rgb(205, 202, 202);
 }
-.card-1:hover {
-  border: 3px solid rgb(216, 92, 70);
-  border-radius: 10px;
+.card-1 button:hover {
+  background-color: darkgray;
+  color: rgb(33, 32, 32);
 }
-.btn :hover {
+.special button {
+  background: none;
+  background-color: rgb(245, 183, 162);
+  border: 2px solid brown;
   color: tomato;
 }
+
 .other-amount {
   width: 70%;
   height: 100px;
@@ -89,21 +109,28 @@
 .other-amount input {
   margin-top: 30px;
   border: none;
+  outline: none;
   width: 100%;
   border-bottom: 2px solid silver;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: rgb(20, 19, 19);
 }
+
 .other-amount button {
   padding: 10px 40px;
   margin-top: 30px;
   border-radius: 10px;
-  background-color: tomato;
+  background-color: brown;
   color: white;
   font-size: 1rem;
   font-weight: 700;
   border: none;
+  outline: none;
+  box-shadow: 1px 0px 10px brown;
+}
+.other-amount button:hover {
+  background-color: brown;
 }
 .plan {
   width: 100%;
@@ -117,12 +144,16 @@
   margin-bottom: 40px;
 }
 .plan-head h1 {
-  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: brown;
+  font-family: "Acme";
+  font-size: 2rem;
   font-weight: 800;
   margin-bottom: 30px;
 }
+
 .plan-head p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: gray;
 }
 .plan-card {
@@ -134,13 +165,13 @@
 .plan-card1 {
   border: 1px solid gray;
   margin: 20px;
-  height: 350px;
+  height: 400px;
   padding: 20px;
   padding-top: 50px;
   border-radius: 10px;
 }
 .plan-card1 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -152,19 +183,137 @@
 }
 .plan-1 {
   background-color: bisque;
+  transition: 1ms;
+}
+.plan-1:hover {
+  background-color: darksalmon;
 }
 .plan-2 {
   background-color: rgb(217, 209, 209);
 }
+.plan-2:hover {
+  background-color: blanchedalmond;
+}
 .plan-3 {
   background-color: rgb(151, 238, 209);
 }
-.update {
+.plan-3:hover {
+  background-color: bisque;
+}
+
+.news {
+  margin-top: 40px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.news h1 {
+  border-bottom: 3px solid brown;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Acme";
+}
+.news-card {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+.first-news {
+  border-radius: 10px;
+  display: flex;
+  border: 1px solid gray;
+  width: 45%;
+  height: 400px;
+  box-shadow: 1px 5px 10px gray;
+}
+
+.first-news img {
+  border-radius: 10px 0 0 10px;
+  width: 310px;
+  height: 400px;
+  background-size: cover;
+}
+
+.news-text {
+  padding: 20px;
+}
+.news-text h4 {
+  margin-top: 30px;
+  color: rgba(67, 64, 64, 0.999);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.news-text button {
+  border: none;
+  outline: none;
+  color: black;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 1rem;
+  font-weight: 800;
+  background: none;
+  border-bottom: 2px solid brown;
+}
+.volantier {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.main {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-bottom: 3px solid brown;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Acme";
+}
+.volantier-all {
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.volantier-1 {
+  box-shadow: 5px 10px 10px gray;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 20px;
+  border: 1px solid gray;
+  text-align: center;
+}
+.volantier-1 img {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+.detals {
+  margin-top: 20px;
+}
+.detals button {
+  padding: 8px 35px;
+  background-color: brown;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.update {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .update-head {
   text-align: center;
@@ -172,17 +321,70 @@
   margin-bottom: 40px;
 }
 .update-head h1 {
-  font-size: 3rem;
+  font-family: "Acme";
+  text-decoration: underline;
+  text-decoration-color: brown;
+  font-size: 2rem;
   font-weight: 800;
   margin-bottom: 30px;
 }
 .update-head p {
-  font-size: 1.5rem;
-  color: gray;
+  font-size: 1.2rem;
+  color: rgb(45, 40, 40);
 }
 .update-main {
   width: 60%;
   height: 200px;
   border: 1px solid bisque;
   background-color: bisque;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.email {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 340px;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  background-color: rgb(206, 202, 202);
+  font-size: 1rem;
+}
+.subscribe {
+  border: none;
+  outline: none;
+  position: relative;
+  height: 50px;
+  width: 200px;
+  left: -5px;
+  border-radius: 0 10px 10px 0;
+  font-size: 1rem;
+
+  color: white;
+  background-color: tomato;
+}
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-item {
+  color: white;
+  text-align: center;
+}
+.footer-item h1 {
+  font-family: "Lobster";
+  color: tomato;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.footer-item p {
+  color: grey;
 }

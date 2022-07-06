@@ -3,3 +3,186 @@
   padding: 0;
   box-sizing: border-box;
 }
+.home-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/donation.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-item {
+  text-align: center;
+}
+.home-item h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 20px;
+}
+.home-item p {
+  color: white;
+  font-size: 1.5rem;
+}
+.home-item button {
+  margin-top: 20px;
+  border: 1px solid orange;
+  background-color: orange;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+.part-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.hea {
+  margin-top: 60px;
+  text-align: center;
+}
+.hea h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.hea p {
+  color: gray;
+  font-size: 1.5rem;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  height: 200px;
+  width: 65%;
+  margin-bottom: 40px;
+}
+.card-1 button {
+  border: none;
+  height: 130px;
+  width: 130px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 10px;
+}
+.card-1:hover {
+  border: 3px solid rgb(216, 92, 70);
+  border-radius: 10px;
+}
+.btn :hover {
+  color: tomato;
+}
+.other-amount {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.other-amount input {
+  margin-top: 30px;
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid silver;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(20, 19, 19);
+}
+.other-amount button {
+  padding: 10px 40px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: tomato;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+.plan {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plan-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.plan-head h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.plan-head p {
+  font-size: 1.5rem;
+  color: gray;
+}
+.plan-card {
+  width: 80%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.plan-card1 {
+  border: 1px solid gray;
+  margin: 20px;
+  height: 350px;
+  padding: 20px;
+  padding-top: 50px;
+  border-radius: 10px;
+}
+.plan-card1 h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.plan-card1 p {
+  text-align: justify;
+  color: gray;
+  font-size: 1.2rem;
+}
+.plan-1 {
+  background-color: bisque;
+}
+.plan-2 {
+  background-color: rgb(217, 209, 209);
+}
+.plan-3 {
+  background-color: rgb(151, 238, 209);
+}
+.update {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.update-head {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.update-head h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.update-head p {
+  font-size: 1.5rem;
+  color: gray;
+}
+.update-main {
+  width: 60%;
+  height: 200px;
+  border: 1px solid bisque;
+  background-color: bisque;
+}
